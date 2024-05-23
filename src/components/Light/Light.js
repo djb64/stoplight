@@ -5,11 +5,11 @@ import "./Light.css";
 const Light = ({ color, active, position }) => {
   const style = {
     order: position,
-    backgroundColor: color
+    backgroundColor: color,
   };
 
   return (
-    <div className="light" style={style}></div>
+    <div className={`light ${active ? "active" : ""}`} style={style}></div>
   );
 };
 
