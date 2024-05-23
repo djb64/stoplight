@@ -11,15 +11,3 @@
 .light.active {
   opacity: 1;
 }
-
-.light.red {
-  background-color: red;
-}
-
-.light.yellow {
-  background-color: yellow;
-}
-
-.light.green {
-  background-color: green;
-}

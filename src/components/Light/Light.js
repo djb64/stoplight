@@ -2,13 +2,21 @@ import React from "react";
 import PropTypes from "prop-types";
 import "./Light.css";
 
-const Light = ({ color, active }) => {
-  return <div className={`light ${color} ${active ? "active" : ""}`}></div>;
+const Light = ({ color, active, position }) => {
+  const style = {
+    order: position,
+    backgroundColor: color
+  };
+
+  return (
+    <div className="light" style={style}></div>
+  );
 };
 
 Light.propTypes = {
   color: PropTypes.string.isRequired,
   active: PropTypes.bool.isRequired,
+  position: PropTypes.number.isRequired,
 };
 
 export default Light;
